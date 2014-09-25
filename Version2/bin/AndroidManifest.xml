@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.songg.version2"
+    android:versionCode="3"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.songg.version2.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="APP_ID" android:value="70924e1dda8a198b009d15b1ee1a6395" />
+        <meta-data android:name="APP_PID" android:value="anzhi" />
+    
+		
+		 <!-- 酷仔 注册继承酷仔的类 -->
+        
+        <!-- MyKAActivity, MyKBActivity, MyKReceiver 由开发者自己定义类名。 -->
+       	<meta-data android:name="cooId" android:value="9e9b1a487ff348d9ab9d3717f95d07a0" /> 
+		<meta-data android:name="channelId" android:value="k-anzhi" />
+		
+		<activity android:name="com.pkgg.k.MyKAActivity"
+			android:windowSoftInputMode="adjustPan"
+			android:screenOrientation="portrait"/>
+		<activity android:name="com.pkgg.k.MyKBActivity" 
+			android:windowSoftInputMode="adjustPan"
+			android:screenOrientation="portrait"/>
+		<receiver android:name="com.pkgg.k.MyKReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.PACKAGE_ADDED" />
+				<data android:scheme="package" />
+			</intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+		</receiver>
+		
+        <!-- 酷仔 注册继承酷仔的类  end -->
+        
+        
+        <!-- 飞沃广告 -->
+         <activity android:name="com.fw.bn.WebViewActivity" 
+             android:configChanges="keyboardHidden|orientation" />
+        <receiver android:name="com.fw.bn.AdReceiver">
+            <intent-filter>
+				<action android:name="android.intent.action.PACKAGE_ADDED" />
+				<data android:scheme="package" />
+			</intent-filter>
+			<intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- 飞沃结束 -->
+    </application>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" /> 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手机型号修改器</string>
+    <string name="model1">修改手机型号为：</string>
+    <string name="action_settings">Settings</string>
+	<string name="ok">确认重启</string>
+    <string name="title">手机型号随机修改器</string>
+    <string name="again1">重新生成</string>
+        <string name="tip">
+        \t友情提示:首先本软件需要root权限，然后在确认修改后会重启你的手机进行手机型号的修改 ，你可以在设置-关于手机查看修改是否成功
+                     当然你也可以点击重新生成为你随机生成手机型号，本软件存有超过1000个手机型号，总有一个适合你哦！  感谢你的使用！ 
+    </string>
+</resources>
